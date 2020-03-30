@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CountriesPerContinent should match snapshot 1`] = `
+<div
+  className=""
+>
+  <div>
+    <div
+      className="doughnut"
+    />
+  </div>
+</div>
+`;

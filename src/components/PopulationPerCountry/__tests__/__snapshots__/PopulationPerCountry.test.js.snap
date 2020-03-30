@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PopulationPerCountry should match snapshot 1`] = `
+<div>
+  <div
+    className="verticalBar"
+  >
+    <h4
+      className="chartTitle"
+    />
+  </div>
+</div>
+`;

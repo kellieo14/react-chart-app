@@ -1,0 +1,47 @@
+:root {
+    --black: #191c2e;
+}
+
+.App {
+    background-color: var(--black);
+    height: 100%;
+    min-height: 100vh;
+}
+
+.App h1 {
+    margin: 0;
+    color: whitesmoke;
+}
+
+.chartTitle {
+    text-transform: uppercase;
+    color: lightgray;
+    letter-spacing: 2px;
+    font-size: 1em;
+    margin-bottom: 25px;
+}
+
+.pie {
+    margin-top: 50px;
+}
+
+.doughnut {
+    margin-top: 50px;
+}
+
+.verticalBar {
+    margin-top: 50px;
+}
+
+.map {
+    width: 95%;
+}
+
+.horizontalBar {
+    margin-top: 50px;
+}
+
+.densityRow {
+    margin-top: 40px;
+    padding: 10px;
+}

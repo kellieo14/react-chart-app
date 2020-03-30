@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WorldMap should match snapshot 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="row"
+  >
+    <div
+      className="col-sm-12"
+    >
+      <img
+        alt="world map"
+        className="map"
+        src="worldMap.png"
+      />
+    </div>
+  </div>
+</div>
+`;

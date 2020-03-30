@@ -1,0 +1,117 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App should match snapshot 1`] = `
+<div
+  className="App"
+>
+  <div
+    className="container"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="container"
+      >
+        <div
+          className="row"
+        >
+          <div
+            className="col-sm-12"
+          >
+            <img
+              alt="world map"
+              className="map"
+              src="worldMap.png"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="pieRow row"
+    >
+      <div
+        className="col-lg-6"
+      >
+        <div
+          className=""
+        >
+          <div>
+            <div
+              className="doughnut"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        className="col-lg-6"
+      >
+        <div
+          className=""
+        >
+          <div
+            className="pie"
+          >
+            <h4
+              className="chartTitle"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="chartRows row"
+    >
+      <div
+        className="col-lg-6"
+      >
+        <div>
+          <div
+            className="verticalBar"
+          >
+            <h4
+              className="chartTitle"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        className="col-lg-6"
+      >
+        <div>
+          <div
+            className="horizontalBar"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      className="row"
+    >
+      <div
+        className="col-lg-6"
+      >
+        <div>
+          <div
+            className="verticalBar"
+          >
+            <h4
+              className="chartTitle"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        className="densityRow col-lg-6"
+      >
+        <div>
+          <div
+            className="polar"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
