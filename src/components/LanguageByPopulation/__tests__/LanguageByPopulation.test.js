@@ -23,15 +23,15 @@ describe('LanguageByPopulation', () => {
     });
 
     const expectedLanguages = [
-        ['Chinese', 1377422166], 
-        ['Hindi', 1295210000], 
-        ['English', 1295210000], 
-        ['English', 323947000], 
-        ['English', 186988000], 
-        ['French', 66710000], 
-        ['English', 24117360], 
-        ['Spanish', 11239004], 
-        ['Spanish', 100],
+        ['Chinese', 1377], 
+        ['Hindi', 1295], 
+        ['English', 1295], 
+        ['English', 324], 
+        ['English', 187], 
+        ['French', 67], 
+        ['English', 24], 
+        ['Spanish', 11], 
+        ['Spanish', 0],
     ];
 
     const expectedSortedLanguages = [

@@ -5,7 +5,7 @@ import {sort} from '../../Utils';
 export  const extractLanguages = (countries, languages) => {
     for (let country in countries) {
         countries[country].languages.forEach(element => {
-            languages.push([element.name, countries[country].population]);
+            languages.push([element.name, Math.round(countries[country].population / 1000000)]);
         })
     }
 }
@@ -30,7 +30,7 @@ export const sortLanguagesByPopulation = (result, languageCountArr, labels, coun
     for (let language in result) {
         languageCountArr.push([language, result[language]]);
     }
-    sort(languageCountArr, 'lanugage', 8, labels, countryCount)
+    sort(languageCountArr, 'lanugage', 8, labels, countryCount);
 
 }
 

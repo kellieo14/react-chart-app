@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import CountriesPerContinent from "../components/CountriesPerContinent/CountriesPerContinent";
-import ApiData from '../components/ApiData';
 import PopulationPerContinent from '../components/PopulationPerContinent/PopulationPerContinent';
 import PopulationPerCountry from '../components/PopulationPerCountry/PopulationPerCountry';
 import LanguageByCountry from '../components/LanguageByCountry/LanguageByCountry';
@@ -10,14 +10,20 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import WorldMap from '../components/WorldMap/WorldMap';
 import Density from '../components/Density/Density';
+import { getCountries } from '../redux/actions/actions';
 
 import './App.css';
 
 const App = () => {
-  const countries = ApiData(`https://restcountries.eu/rest/v2/all`);
+  const countries = useSelector((state) => state.countries);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(getCountries());
+  }, [dispatch]);
+
   return (
     <div className="App">
-      {(JSON.stringify(countries) !== '{}') && 
       <Container>
         <Row>
           <WorldMap />
@@ -47,7 +53,6 @@ const App = () => {
           </Col>
         </Row>
       </Container>
-      }
     </div>
   );
 }

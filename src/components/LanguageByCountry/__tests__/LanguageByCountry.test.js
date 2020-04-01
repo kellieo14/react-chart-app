@@ -18,7 +18,8 @@ describe('LanguageByCountry', () => {
         spyUseState = jest.spyOn(reactHooks, 'useState')
             .mockImplementationOnce(() => [{}, mockSetData]);
         spyUseEffect = jest.spyOn(reactHooks, 'useEffect');
-    })
+    });
+
     const expectedLanguages = [
         'Chinese', 
         'English', 

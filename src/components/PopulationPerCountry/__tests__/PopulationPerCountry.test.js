@@ -96,7 +96,7 @@ describe('PopulationPerCountry', () => {
         let populations = [];
         getTopPopulations(expectedSortedCountries, labels, populations);
         expect(labels).toStrictEqual(['China', 'India', 'United States of America', 'Nigeria', 'France']);
-        expect(populations).toStrictEqual([1377422166, 1295210000, 323947000, 186988000, 66710000]);
+        expect(populations).toStrictEqual([1377, 1295, 324, 187, 67]);
     });
 
     it('should match snapshot', () => {

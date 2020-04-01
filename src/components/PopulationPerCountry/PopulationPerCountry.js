@@ -9,7 +9,7 @@ export const getTopPopulations = (countries, labels, populations) => {
     if (countries.length > 0) {
         for (let i = 0; i < 5; i++) {
             labels.push(countries[i].name);
-            populations.push(countries[i].population);
+            populations.push(Math.round(countries[i].population / 1000000));
         }
     }
 }
@@ -22,7 +22,7 @@ export const setPopulationData = (countries, labels, populations, setData) => {
             labels: labels,
             datasets: [
             {
-                label: 'Population',
+                label: 'Population / Million',
                 backgroundColor: 'rgb(94,120,254, .1)',
                 borderColor: 'rgb(0,128,214)',
                 borderWidth: 1,
