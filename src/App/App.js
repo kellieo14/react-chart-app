@@ -25,33 +25,37 @@ const App = () => {
   return (
     <div className="App">
       <Container>
-        <Row>
+        <Row className='title-container'>
+          <h1>World Data</h1>
           <WorldMap />
         </Row>
-        <Row className='pieRow'>
-          <Col lg={6}>
-            <CountriesPerContinent countries={countries} />
-          </Col>
-          <Col lg={6}>
-            <PopulationPerContinent countries={countries} />
-          </Col>
-        </Row>
-        <Row className='chartRows'>
-          <Col lg={6}>
-            <LanguageByPopulation countries={countries} />
-          </Col>
-          <Col lg={6}>
-            <LanguageByCountry countries={countries} />
-          </Col>
-        </Row>
-        <Row>
-          <Col lg={6}>
-            <PopulationPerCountry countries={countries} />
-          </Col>
-          <Col className='densityRow' lg={6}>
-            <Density countries={countries} />
-          </Col>
-        </Row>
+        <div className='charts'>
+          <Row className='pie-row'>
+            <Col lg={6}>
+              <CountriesPerContinent countries={countries} />
+            </Col>
+            <Col lg={6}>
+              <PopulationPerContinent countries={countries} />
+            </Col>
+          </Row>
+          <Row className='chart-rows'>
+            <Col lg={6}>
+              <LanguageByPopulation countries={countries} />
+            </Col>
+            <Col lg={6}>
+              <LanguageByCountry countries={countries} />
+            </Col>
+          </Row>
+          <Row>
+            <Col lg={6}>
+              <PopulationPerCountry countries={countries} />
+            </Col>
+            <Col className='densityRow' lg={6}>
+              <Density countries={countries} />
+            </Col>
+          </Row>
+        </div>
+
       </Container>
     </div>
   );

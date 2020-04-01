@@ -8,8 +8,11 @@ exports[`App should match snapshot 1`] = `
     className="container"
   >
     <div
-      className="row"
+      className="title-container row"
     >
+      <h1>
+        World Data
+      </h1>
       <div
         className="container"
       >
@@ -29,86 +32,90 @@ exports[`App should match snapshot 1`] = `
       </div>
     </div>
     <div
-      className="pieRow row"
+      className="charts"
     >
       <div
-        className="col-lg-6"
+        className="pie-row row"
       >
         <div
-          className=""
+          className="col-lg-6"
+        >
+          <div
+            className=""
+          >
+            <div>
+              <div
+                className="doughnut"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          className="col-lg-6"
+        >
+          <div
+            className=""
+          >
+            <div
+              className="pie"
+            >
+              <h4
+                className="chartTitle"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="chart-rows row"
+      >
+        <div
+          className="col-lg-6"
         >
           <div>
             <div
-              className="doughnut"
+              className="verticalBar"
+            >
+              <h4
+                className="chartTitle"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          className="col-lg-6"
+        >
+          <div>
+            <div
+              className="horizontalBar"
             />
           </div>
         </div>
       </div>
       <div
-        className="col-lg-6"
+        className="row"
       >
         <div
-          className=""
+          className="col-lg-6"
         >
-          <div
-            className="pie"
-          >
-            <h4
-              className="chartTitle"
-            />
+          <div>
+            <div
+              className="verticalBar"
+            >
+              <h4
+                className="chartTitle"
+              />
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-    <div
-      className="chartRows row"
-    >
-      <div
-        className="col-lg-6"
-      >
-        <div>
-          <div
-            className="verticalBar"
-          >
-            <h4
-              className="chartTitle"
+        <div
+          className="densityRow col-lg-6"
+        >
+          <div>
+            <div
+              className="polar"
             />
           </div>
-        </div>
-      </div>
-      <div
-        className="col-lg-6"
-      >
-        <div>
-          <div
-            className="horizontalBar"
-          />
-        </div>
-      </div>
-    </div>
-    <div
-      className="row"
-    >
-      <div
-        className="col-lg-6"
-      >
-        <div>
-          <div
-            className="verticalBar"
-          >
-            <h4
-              className="chartTitle"
-            />
-          </div>
-        </div>
-      </div>
-      <div
-        className="densityRow col-lg-6"
-      >
-        <div>
-          <div
-            className="polar"
-          />
         </div>
       </div>
     </div>

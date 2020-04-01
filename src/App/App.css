@@ -33,10 +33,6 @@
     margin-top: 50px;
 }
 
-.map {
-    width: 95%;
-}
-
 .horizontalBar {
     margin-top: 50px;
 }
@@ -44,4 +40,35 @@
 .densityRow {
     margin-top: 40px;
     padding: 10px;
+}
+
+.title-container h1 {
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 40%;
+    text-align: center;
+    z-index: 1;
+    text-shadow: 2px 2px 2px #912046, 0 0 1em #912046, 0 0 0.2em  #0080d6;
+    color: var(--black);
+}
+
+.title-container  {
+    font-family: 'Knewave', cursive;
+    position: relative;
+    display: inline-block;
+    padding-top: 75px;
+}
+
+@media (max-width: 1000px) {
+    .title-container h1 {
+        font-size: 3em;
+    }
+}
+
+@media (min-width: 1001px) {
+    .title-container h1 {
+        font-size: 5vw;
+    }
 }
